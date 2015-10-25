@@ -10,26 +10,26 @@ This code book that describes the variables, the data, and any transformations o
 
 ##Source files, measurement variables and required packages
 The data for the project can be obtained from:
-[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip]
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 A full description of the data set and variables is available at the site where the data was obtained: 
-[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones] 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 The variables are also described in the features_info.txt file in the data set.
 
 Once downloaded, extract the files to a directory. Before you run the runAnalysis.R script, replace the path that points to the directory (yourWorkingDirectory) at the top of the script.
 
 The script requires that you have installed dplyr and stringr packages.
 
-##Goals of the project (in brackets steps in which the goal is achieved)
+###Goals of the project (in brackets steps in which the goal is achieved)
 1. Merges the training and the test sets to create one data set. (step 2)
 2. Extracts only the measurements on the mean and standard deviation for each measurement. (step 1)
 3. Uses descriptive activity names to name the activities in the data set.  (step 1)
 4. Appropriately labels the data set with descriptive variable names.  (step 1)
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  (step 3)
 
-##How I the goals are achieved in my script
+###How the goals are achieved using the run_analysis.R script
 
-###Step 1: Read the files and add meaningful labels to them. Leave only columns that refer to means and standard deviations of measurements.
+####Step 1: Read the files and add meaningful labels to them. Leave only columns that refer to means and standard deviations of measurements.
 This stage fulfills goals 2 through 4.
 
 The following files are read using the read.table function:
@@ -48,10 +48,10 @@ After adding the tidied labels to the measurement data columns, only columns ref
 
 Numeric labels of activities in the measurement files ('X_test.txt' and 'X_train.txt') are replaced with descriptive strings using the lookup table contained in the activity_labels.txt file.
 
-###Step 2. Merge the training and test data sets
+####Step 2. Merge the training and test data sets
 The training data and test data are combined to form one coherent data set with labels.
 
-###Step 3. From the allData create a tidy data set with the average of each variable for each activity and each subject. Save it to a text file.
+####Step 3. From the allData create a tidy data set with the average of each variable for each activity and each subject. Save it to a text file.
 
 First, data set resulting from Step 2 is grouped by activity and by subject. Next, average for each measurement column is calculated.
 
