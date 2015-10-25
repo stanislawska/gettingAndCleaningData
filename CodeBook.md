@@ -4,7 +4,7 @@ author: "maja_s"
 date: "25 October 2015"
 output: html_document
 ---
-#Code book for the "Getting and Cleaning Data"" course project
+#Code book for the "Getting and Cleaning Data" course project
 
 This code book that describes the variables, the data, and any transformations or work that you performed to clean up the data
 
