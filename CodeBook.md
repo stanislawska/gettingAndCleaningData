@@ -46,9 +46,13 @@ The script requires that you have installed **dplyr** and **stringr** packages.
 ###Goals of the project 
 *In brackets steps in which the goal is achieved*
 1. Merges the training and the test sets to create one data set. (step 2)
+
 2. Extracts only the measurements on the mean and standard deviation for each measurement. (step 1)
+
 3. Uses descriptive activity names to name the activities in the data set.  (step 1)
+
 4. Appropriately labels the data set with descriptive variable names.  (step 1)
+
 5. From the data set in stage 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  (step 3)
 
 Note that the script achieves the goals in the following order: goal 4 => goal 2 => goal 3 => goal 1 => goal 5.
