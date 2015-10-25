@@ -44,7 +44,9 @@ The script requires that you have installed **dplyr** and **stringr** packages.
 - **averagesForTidyData** 180 obs. of 88 var.: tidy data set fulfilling project **goal 5**
 
 ###Goals of the project 
+
 *In brackets steps in which the goal is achieved*
+
 1. Merges the training and the test sets to create one data set. (step 2)
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement. (step 1)
