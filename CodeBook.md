@@ -34,14 +34,14 @@ This stage fulfills goals 2 through 4.
 
 The following files are read using the read.table function:
 
-*activity_labels.txt
-*features.txt
-*test/subject_test.txt
-*test/y_test.txt
-*test/X_test.txt
-*train/subject_train.txt
-*train/y_train.txt
-*train/X_train.txt
+- activity_labels.txt
+- features.txt
+- test/subject_test.txt
+- test/y_test.txt
+- test/X_test.txt
+- train/subject_train.txt
+- train/y_train.txt
+- train/X_train.txt
 
 The features.txt file contains labels for measurements that are later to be used as column headers for the measurement data. The label strings contain problematic characters (brackets, hyphens, commas), so they are removed. Only the tidy label column is used later on.
 After adding the tidied labels to the measurement data columns, only columns refering to the mean and standard deviations are extracted (these are 86 variables out of the original 561).
