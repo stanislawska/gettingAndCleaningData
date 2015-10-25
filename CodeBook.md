@@ -40,8 +40,8 @@ The script requires that you have installed **dplyr** and **stringr** packages.
 
 #####Data sets produced by the script
 - **allData** 10299 obs. of 88 var.: data set resulting from fulfilling **project goals 1 through 4**, the first 7352 rows are from the training data set, the remaining 2947 rows are from the test data set; the first two columns identify the subject and the activity, the remaining 86 columns identify the measured features
-- **averagesForTidyData** 180 obs. of 88 var.: tidy data set fulfilling project **goal 5**
 
+- **averagesForTidyData** 180 obs. of 88 var.: tidy data set fulfilling project **goal 5**
 
 ###Goals of the project 
 *In brackets steps in which the goal is achieved*
@@ -76,9 +76,13 @@ After adding the tidied labels to the measurement data columns, only columns ref
 Numeric labels of activities in the measurement files (*X_test.txt* and *X_train.txt*) are replaced with descriptive strings using the lookup table contained in the activity_labels.txt file. **Goal 3 is achieved.**
 
 ####Step 2. Merge the training and test data sets
-The training data and test data are combined to form one coherent data set with labels. **Goal 1 is achieved.**
 
-####Step 3. From the allData create a tidy data set with the average of each variable for each activity and each subject. Save it to a text file. **Goal 5 is achieved.**
+**Goal 1 is achieved.**
+The training data and test data are combined to form one coherent data set with labels. 
+
+####Step 3. From the allData create a tidy data set with the average of each variable for each activity and each subject. Save it to a text file. 
+
+**Goal 5 is achieved.**
 
 First, data set resulting from Step 2 is grouped by activity and by subject. Next, average for each measurement column is calculated.
 
@@ -101,51 +105,51 @@ This is an excerpt from the *features_info.txt* file from the original data set
 > These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
--tBodyAcc-XYZ
--tGravityAcc-XYZ
--tBodyAccJerk-XYZ
--tBodyGyro-XYZ
--tBodyGyroJerk-XYZ
--tBodyAccMag
--tGravityAccMag
--tBodyAccJerkMag
--tBodyGyroMag
--tBodyGyroJerkMag
--fBodyAcc-XYZ
--fBodyAccJerk-XYZ
--fBodyGyro-XYZ
--fBodyAccMag
--fBodyAccJerkMag
--fBodyGyroMag
--fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 > The set of variables that were estimated from these signals are: 
 
--mean(): Mean value
--std(): Standard deviation
--mad(): Median absolute deviation 
--max(): Largest value in array
--min(): Smallest value in array
--sma(): Signal magnitude area
--energy(): Energy measure. Sum of the squares divided by the number of values. 
--iqr(): Interquartile range 
--entropy(): Signal entropy
--arCoeff(): Autorregresion coefficients with Burg order equal to 4
--correlation(): correlation coefficient between two signals
--maxInds(): index of the frequency component with largest magnitude
--meanFreq(): Weighted average of the frequency components to obtain a mean frequency
--skewness(): skewness of the frequency domain signal 
--kurtosis(): kurtosis of the frequency domain signal 
--bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
--angle(): Angle between to vectors.
+- mean(): Mean value **These values are included in the final tidy data set**
+- std(): Standard deviation **These values are included in the final tidy data set**
+- mad(): Median absolute deviation 
+- max(): Largest value in array
+- min(): Smallest value in array
+- sma(): Signal magnitude area
+- energy(): Energy measure. Sum of the squares divided by the number of values. 
+- iqr(): Interquartile range 
+- entropy(): Signal entropy
+- arCoeff(): Autorregresion coefficients with Burg order equal to 4
+- correlation(): correlation coefficient between two signals
+- maxInds(): index of the frequency component with largest magnitude
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- skewness(): skewness of the frequency domain signal 
+- kurtosis(): kurtosis of the frequency domain signal 
+- bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+- angle(): Angle between to vectors.
 
 > Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
--gravityMean
--tBodyAccMean
--tBodyAccJerkMean
--tBodyGyroMean
--tBodyGyroJerkMean
+- gravityMean
+- tBodyAccMean
+- tBodyAccJerkMean
+- tBodyGyroMean
+- tBodyGyroJerkMean
 
 
 
