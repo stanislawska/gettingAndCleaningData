@@ -25,7 +25,7 @@ The script requires that you have installed dplyr and stringr packages.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. (step 1)
 3. Uses descriptive activity names to name the activities in the data set.  (step 1)
 4. Appropriately labels the data set with descriptive variable names.  (step 1)
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  (step 3)
+5. From the data set in stage 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  (step 3)
 
 ###How the goals are achieved using the run_analysis.R script
 
