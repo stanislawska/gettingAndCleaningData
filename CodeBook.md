@@ -96,10 +96,12 @@ Finally, the new tidy data set is saved to a file using the write.table function
 
 Additionally, the script contains two lines of code that allow to read the resulting text file and view its contents.
 
+=================
+
 ### Original variables from the source data
 This is an excerpt from the *features_info.txt* file from the original data set
 
-> Feature Selection 
+> ### Feature Selection 
 > =================
 
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -131,8 +133,8 @@ This is an excerpt from the *features_info.txt* file from the original data set
 
 > The set of variables that were estimated from these signals are: 
 
-- mean(): Mean value **These values are included in the final tidy data set**
-- std(): Standard deviation **These values are included in the final tidy data set**
+- mean(): Mean value ---------------- **These values are included in the final  data set**
+- std(): Standard deviation ---------------- **These values are included in the final  data set**
 - mad(): Median absolute deviation 
 - max(): Largest value in array
 - min(): Smallest value in array
@@ -143,7 +145,7 @@ This is an excerpt from the *features_info.txt* file from the original data set
 - arCoeff(): Autorregresion coefficients with Burg order equal to 4
 - correlation(): correlation coefficient between two signals
 - maxInds(): index of the frequency component with largest magnitude
-- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency ------ **These values are included in the final data set**
 - skewness(): skewness of the frequency domain signal 
 - kurtosis(): kurtosis of the frequency domain signal 
 - bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
@@ -151,11 +153,11 @@ This is an excerpt from the *features_info.txt* file from the original data set
 
 > Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-- gravityMean
-- tBodyAccMean
-- tBodyAccJerkMean
-- tBodyGyroMean
-- tBodyGyroJerkMean
+- gravityMean ---------------- **These values are included in the final data set**
+- tBodyAccMean ---------------- **These values are included in the final data set**
+- tBodyAccJerkMean ---------------- **These values are included in the final data set**
+- tBodyGyroMean ---------------- **These values are included in the final data set**
+- tBodyGyroJerkMean ---------------- **These values are included in the final data set**
 
 
 
